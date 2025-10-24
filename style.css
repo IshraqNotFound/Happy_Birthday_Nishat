@@ -1,0 +1,115 @@
+/* Full-Screen Loading Screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-size: 2em;
+}
+
+.spinner {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #00ffcc;
+  user-select: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  font-family: monospace;
+}
+
+#enter-fullscreen {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-family: 'Lexend', sans-serif;
+  background-color: #00ffcc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+#enter-fullscreen:hover {
+  background-color: #00ccaa;
+}
+
+#loading-screen p {
+  font-size: 0.5em;
+  margin-top: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  padding: 0.8em 1.6em;
+  background: transparent;
+  border-color: #00A7FF;
+  border-radius: 20px;
+  font-family: 'Lexend';
+  color: aliceblue;
+  margin: 10px 10px;
+  border-style: solid;
+}
+
+.birthday-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.birthday-text h1 {
+  font-size: 1.2em;
+  margin: 0.2em;
+  font-weight: 100;
+}
+
+.birthday-text p {
+  font-size: 0.6em;
+  margin-top: 0.5em;
+  color: #ffd700;
+}
+
+#section2 {
+  display: none;
+}

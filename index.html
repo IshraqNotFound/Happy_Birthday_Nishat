@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fireworks Background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+    <button id="enter-fullscreen">Enter Fullscreen</button>
+  </div>
+  
+  <canvas id="fireworks"></canvas>
+  
+  <div class="birthday-text">
+    <div id="section1">
+      <h1>Happy Birthday Nishat!</h1>
+      <button class="btn" onclick="showSection2()">a letter to you </button>
+    </div>
+    
+    <div id="section2">
+      <h1>Happy Birthday Nishat!</h1>
+      <p>Dear Nishat,</p>
+      <p>May Allah bless your life with endless happiness, success, and love. I hope every dream you hold close starts unfolding beautifully, just like the way stars light up the night sky. You truly deserve a future that’s as bright and graceful as your soul. Inshallah, this year brings you more smiles, peaceful moments, and achievements you’ll be proud of. 🌙💫</p>
+      <p>With all our love and warmest wishes,</p>
+      <p><b>Ishraq</b></p>
+      <button class="btn" onclick="showSection1()">Back</button>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+  
+</body>
+
+</html>
